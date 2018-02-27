@@ -1,0 +1,10 @@
+<div class="section">
+	<form name="myForm">
+		Input 7 or 10 digit phone number: <input type="text" name="fnum" ng-model="number">
+		<input type="submit" value="Submit" ng-click="buttonSubmit()">
+	</form>
+	<div ng-if="validNumber">
+	Total number of combinations: {{gridOptions.totalItems}}
+	<div ui-grid="gridOptions" class="grid" ui-grid-pagination>
+</div>
+</div>
